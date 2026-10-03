@@ -45,9 +45,10 @@ button,input,textarea{font:inherit}
 .button-dark:hover{background:var(--gray)}
 .text-link{display:inline-flex;align-items:center;gap:.55rem;font-size:.92rem;border-bottom:1px solid rgba(46,41,39,.35);padding-bottom:.18rem}
 .hero-art{position:relative;justify-self:end;width:min(100%,620px);padding:0 32px 40px 0}
-.portrait-frame{aspect-ratio:4/5;overflow:hidden;background:var(--champagne);position:relative}
-.portrait-frame img{width:100%;height:100%;object-fit:cover;object-position:50% 28%;filter:saturate(.83) contrast(.96)}
-.portrait-frame::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.3)}
+.hero-wedding-frame{aspect-ratio:4/5;overflow:hidden;background:var(--champagne);position:relative}
+.hero-wedding-frame img{width:100%;height:100%;object-fit:cover;object-position:58% 50%;filter:saturate(.9) contrast(.96)}
+.hero-wedding-frame::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.3)}
+.reference-badge{position:absolute;left:1rem;bottom:1rem;z-index:2;background:rgba(46,41,39,.78);color:#fff;padding:.48rem .65rem;font-size:.58rem;text-transform:uppercase;letter-spacing:.14em;backdrop-filter:blur(6px)}
 .side-note{position:absolute;right:-38px;bottom:125px;transform:rotate(90deg);transform-origin:right bottom;margin:0;font-size:.67rem;text-transform:uppercase;letter-spacing:.17em;color:var(--gray)}
 .seal{position:absolute;left:-46px;bottom:-4px;width:112px;height:112px;border-radius:50%;background:var(--dogwood);display:grid;place-items:center;border:8px solid var(--linen)}
 .seal span{font:2rem var(--serif)}
@@ -78,12 +79,11 @@ button,input,textarea{font:inherit}
 .story-card{margin:0}
 .story-card-b{margin-top:12vw}
 .story-card-c{grid-column:1 / -1;width:58%;margin-left:auto;margin-top:2vw}
-.story-placeholder{height:auto;aspect-ratio:4/5;position:relative;overflow:hidden;background:linear-gradient(145deg,var(--champagne),var(--dogwood));display:flex;align-items:flex-end;padding:1.2rem}
-.story-card-b .story-placeholder{background:linear-gradient(155deg,#d8cbc4,#aaa09a)}
-.story-card-c .story-placeholder{aspect-ratio:16/9;background:linear-gradient(130deg,#e7d9ce,#c2afa5 45%,#978b85)}
-.story-placeholder::before{content:"";position:absolute;inset:8%;border:1px solid rgba(255,255,255,.45)}
-.story-placeholder::after{content:"";position:absolute;width:160px;height:160px;border-radius:50%;background:rgba(255,255,255,.16);top:20%;left:20%}
-.story-placeholder span{position:relative;z-index:1;font-size:.66rem;text-transform:uppercase;letter-spacing:.14em;color:#fff}
+.story-image{margin:0;position:relative;overflow:hidden;background:var(--champagne);aspect-ratio:4/5}
+.story-image img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s;filter:saturate(.9) contrast(.97)}
+.story-card:hover .story-image img{transform:scale(1.025);filter:saturate(1) contrast(1)}
+.story-image figcaption{position:absolute;left:.9rem;right:.9rem;bottom:.9rem;margin:0;padding:.5rem .65rem;background:rgba(46,41,39,.74);color:#fff;font-size:.57rem;text-transform:uppercase;letter-spacing:.11em;line-height:1.35;backdrop-filter:blur(6px)}
+.story-card-c .story-image{aspect-ratio:16/9}
 .story-meta{display:flex;justify-content:space-between;gap:1rem;border-top:1px solid rgba(129,119,115,.28);padding-top:.75rem;margin-top:.8rem}
 .story-meta p{margin:0;font:1.25rem var(--serif)}
 .story-meta span{font-size:.68rem;color:var(--gray);text-transform:uppercase;letter-spacing:.12em;text-align:right}
@@ -124,7 +124,7 @@ button,input,textarea{font:inherit}
 @media (max-width: 620px){
   :root{--pad:1.1rem}.hero{padding-top:110px}.hero h1{font-size:clamp(3rem,15vw,4.7rem)}.lede{font-size:.98rem}.hero-actions{align-items:flex-start;flex-direction:column}.hero-art{padding-right:18px}.side-note{right:-24px}.seal{width:88px;height:88px;left:-18px}.seal span{font-size:1.5rem}
   .manifesto{padding-top:6rem;padding-bottom:6rem}.manifesto h2{font-size:2.7rem}.about,.work,.journal{padding-top:6rem;padding-bottom:6rem}.about-copy h2,.work h2,.journal h2,.contact h2{font-size:clamp(2.7rem,13vw,4rem)}
-  .story-grid{grid-template-columns:1fr}.story-card-b{margin-top:1.5rem}.story-card-c{grid-column:auto;width:100%;margin:1.5rem 0 0}.story-card-c .story-placeholder{aspect-ratio:4/5}.story-meta{align-items:flex-start}.journal-item{grid-template-columns:1fr;gap:.4rem}.journal-item p{text-align:left;margin:.4rem 0}.contact{padding-top:5.5rem;padding-bottom:5.5rem}
+  .story-grid{grid-template-columns:1fr}.story-card-b{margin-top:1.5rem}.story-card-c{grid-column:auto;width:100%;margin:1.5rem 0 0}.story-card-c .story-image{aspect-ratio:4/5}.story-meta{align-items:flex-start}.journal-item{grid-template-columns:1fr;gap:.4rem}.journal-item p{text-align:left;margin:.4rem 0}.contact{padding-top:5.5rem;padding-bottom:5.5rem}
 }
 @media (prefers-reduced-motion: reduce){
   html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}
