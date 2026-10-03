@@ -10,14 +10,14 @@ The deployable files are already at the project root:
 - `styles.css`
 - `script.js`
 - `vercel.json`
-- `assets/`
+- Image assets are stored directly in the project root
 - `README.md`
 
 This structure can be uploaded directly to a GitHub repository or imported into Vercel with no build step.
 
 ## Visual-reference images
 
-The demo includes generated wedding imagery in `assets/` to show the intended art direction while real, client-approved wedding photography is pending. The interface labels these images as demo/reference material so they are not presented as Ainee Pimentel's actual weddings.
+The demo includes generated wedding imagery in the project root to show the intended art direction while real, client-approved wedding photography is pending. The interface labels these images as demo/reference material so they are not presented as Ainee Pimentel's actual weddings.
 
 Files:
 
