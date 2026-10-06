@@ -233,3 +233,31 @@ button,input,textarea{font:inherit}
 .button-dark{background:#6f6762}.button-dark:hover{background:#817773}
 .skip-link{background:#6f6762}
 @media (max-width:900px){.page-main{padding-top:78px}.page-section{min-height:auto}.contact-page-main{padding-top:0}.page-contact{padding-top:8rem}.contact-actions{align-items:stretch}.contact-actions .button{width:100%}}
+
+/* Mobile: avoid floating WhatsApp overlap with gallery/content. */
+@media (max-width: 900px){
+  .whatsapp-float{display:none}
+}
+
+/* Compact moving wedding preview on Home */
+.home-weddings{padding:clamp(3.5rem,6vw,5.5rem) 0;background:var(--paper);overflow:hidden;border-top:1px solid rgba(111,103,98,.16)}
+.home-weddings-head{display:flex;align-items:end;justify-content:space-between;gap:2rem;margin-bottom:1.8rem}
+.home-weddings-head h2{font:400 clamp(2rem,3.8vw,3.8rem)/1.02 var(--serif);letter-spacing:-.025em;margin:.55rem 0 0;max-width:15ch;color:var(--ink)}
+.wedding-marquee{width:100%;overflow:hidden}
+.wedding-marquee-track{display:flex;width:max-content;gap:.8rem;animation:wedding-marquee 38s linear infinite;will-change:transform}
+.wedding-marquee:hover .wedding-marquee-track,.wedding-marquee:focus-within .wedding-marquee-track{animation-play-state:paused}
+.wedding-marquee-card{display:block;flex:0 0 clamp(180px,19vw,285px);height:clamp(150px,16vw,235px);overflow:hidden;background:var(--champagne)}
+.wedding-marquee-card img{width:100%;height:100%;object-fit:cover;transition:transform .55s cubic-bezier(.2,.7,.2,1),filter .55s;filter:saturate(.92) contrast(.98)}
+.wedding-marquee-card:hover img,.wedding-marquee-card:focus-visible img{transform:scale(1.035);filter:saturate(1) contrast(1)}
+@keyframes wedding-marquee{from{transform:translateX(0)}to{transform:translateX(calc(-50% - .4rem))}}
+@media (max-width:620px){
+  .home-weddings{padding:3.2rem 0}
+  .home-weddings-head{align-items:flex-start;flex-direction:column;margin-bottom:1.25rem}
+  .home-weddings-head h2{font-size:2.35rem;max-width:12ch}
+  .wedding-marquee-card{flex-basis:190px;height:155px}
+  .wedding-marquee-track{gap:.65rem;animation-duration:32s}
+}
+@media (prefers-reduced-motion: reduce){
+  .wedding-marquee{overflow-x:auto;scrollbar-width:thin}
+  .wedding-marquee-track{animation:none}
+}
