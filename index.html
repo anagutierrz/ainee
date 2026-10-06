@@ -10,6 +10,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Italiana&display=swap" rel="stylesheet">
+  <!-- Visual references provided by client: typography-reference.png and contact-reference.png.
+       They guide typography/contact composition and are kept in the project root for review;
+       the actual live UI is built in HTML/CSS rather than displaying screenshots as content. -->
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
@@ -17,7 +20,7 @@
 
   <header class="site-header" data-header>
     <a class="brand" href="#home" aria-label="Ainee Pimentel — Home">
-      <img src="logo-ainee-pimentel.webp" alt="Ainee Pimentel — Wedding & Event Planner" />
+      <img src="logo-ainee.png" alt="Ainee Pimentel — Wedding & Event Planner" />
     </a>
 
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
@@ -46,8 +49,7 @@
 
       <div class="hero-art reveal" aria-label="Wedding visual reference for the demo">
         <div class="hero-wedding-frame">
-          <img src="hero-wedding-reference.webp" alt="Editorial destination-wedding reference image used for the demo" />
-          <span class="reference-badge">Visual reference · Demo</span>
+          <img src="wedding-hero.webp" alt="Newlyweds walking together beside the water at sunset" />
         </div>
         <p class="side-note">Planning with intention<br>and a personal touch.</p>
         <div class="seal" aria-hidden="true"><span>AP</span></div>
@@ -91,30 +93,45 @@
           <div class="section-number">02 · Weddings</div>
           <h2>Stories worth remembering.</h2>
         </div>
-        <p>These generated images are visual references for art direction only. They are not presented as Ainee’s real weddings and will be replaced with approved photography for the final site.</p>
+        <p>A selection of wedding moments and design details using the photography provided for this demo.</p>
       </div>
 
       <div class="story-grid">
         <article class="story-card story-card-a reveal">
           <figure class="story-image">
-            <img src="wedding-reference-01.webp" alt="Generated reference image of a coastal wedding ceremony" loading="lazy" />
-            <figcaption>Visual reference · Replace with approved real wedding photography</figcaption>
+            <img src="wedding-reception-wide.webp" alt="Wedding reception tables arranged in a bright garden venue" loading="lazy" />
           </figure>
-          <div class="story-meta"><p>Coastal ceremony</p><span>Art direction reference</span></div>
+          <div class="story-meta"><p>Garden reception</p><span>Setting & atmosphere</span></div>
         </article>
         <article class="story-card story-card-b reveal">
           <figure class="story-image">
-            <img src="wedding-reference-02.webp" alt="Generated reference image of an elegant wedding reception tablescape" loading="lazy" />
-            <figcaption>Visual reference · Replace with approved real wedding photography</figcaption>
+            <img src="wedding-table-blue.webp" alt="Wedding table styling with blue glassware, white flowers and candlelight" loading="lazy" />
           </figure>
-          <div class="story-meta"><p>Sunset reception</p><span>Art direction reference</span></div>
+          <div class="story-meta"><p>Thoughtful tablescape</p><span>Florals & details</span></div>
         </article>
         <article class="story-card story-card-c reveal">
           <figure class="story-image">
-            <img src="wedding-reference-03.webp" alt="Generated reference image of a couple walking at a tropical destination wedding" loading="lazy" />
-            <figcaption>Visual reference · Replace with approved real wedding photography</figcaption>
+            <img src="wedding-table-sunset.webp" alt="Elegant wedding table with glassware and white flowers in warm evening light" loading="lazy" />
           </figure>
-          <div class="story-meta"><p>Golden-hour portrait</p><span>Art direction reference</span></div>
+          <div class="story-meta"><p>Golden-hour details</p><span>Light & composition</span></div>
+        </article>
+        <article class="story-card story-card-d reveal">
+          <figure class="story-image">
+            <img src="wedding-detail-menu.webp" alt="Wedding place setting with a menu card, glass charger and white flowers" loading="lazy" />
+          </figure>
+          <div class="story-meta"><p>The finishing touches</p><span>Paper goods & styling</span></div>
+        </article>
+        <article class="story-card story-card-e reveal">
+          <figure class="story-image">
+            <img src="wedding-courtyard.webp" alt="Outdoor wedding reception in a warm courtyard with orange walls, woven chairs and floral arrangements" loading="lazy" />
+          </figure>
+          <div class="story-meta"><p>Courtyard celebration</p><span>Color, setting & floral design</span></div>
+        </article>
+        <article class="story-card story-card-f reveal">
+          <figure class="story-image">
+            <img src="wedding-couple-joy.webp" alt="Newlyweds sharing a joyful moment during their wedding celebration" loading="lazy" />
+          </figure>
+          <div class="story-meta"><p>Joy in the moment</p><span>Real celebration & connection</span></div>
         </article>
       </div>
     </section>
@@ -132,6 +149,7 @@
       </div>
     </section>
 
+    <!-- Contact composition reference: contact-reference.png -->
     <section id="contact" class="contact section-shell">
       <div class="contact-panel reveal">
         <p class="eyebrow">Tell me what you’re dreaming of</p>
@@ -145,7 +163,7 @@
   </main>
 
   <footer class="site-footer section-shell">
-    <div class="footer-brand"><img src="logo-ainee-pimentel.webp" alt="Ainee Pimentel" /></div>
+    <div class="footer-brand"><img src="logo-ainee.png" alt="Ainee Pimentel" /></div>
     <div class="footer-nav">
       <a href="#about">Meet Ainee</a><a href="#weddings">Weddings</a><a href="#journal">Journal</a><a href="#contact">Contact</a>
     </div>

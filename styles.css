@@ -46,7 +46,7 @@ button,input,textarea{font:inherit}
 .text-link{display:inline-flex;align-items:center;gap:.55rem;font-size:.92rem;border-bottom:1px solid rgba(46,41,39,.35);padding-bottom:.18rem}
 .hero-art{position:relative;justify-self:end;width:min(100%,620px);padding:0 32px 40px 0}
 .hero-wedding-frame{aspect-ratio:4/5;overflow:hidden;background:var(--champagne);position:relative}
-.hero-wedding-frame img{width:100%;height:100%;object-fit:cover;object-position:58% 50%;filter:saturate(.9) contrast(.96)}
+.hero-wedding-frame img{width:100%;height:100%;object-fit:cover;object-position:50% 52%;filter:saturate(.94) contrast(.98)}
 .hero-wedding-frame::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.3)}
 .reference-badge{position:absolute;left:1rem;bottom:1rem;z-index:2;background:rgba(46,41,39,.78);color:#fff;padding:.48rem .65rem;font-size:.58rem;text-transform:uppercase;letter-spacing:.14em;backdrop-filter:blur(6px)}
 .side-note{position:absolute;right:-38px;bottom:125px;transform:rotate(90deg);transform-origin:right bottom;margin:0;font-size:.67rem;text-transform:uppercase;letter-spacing:.17em;color:var(--gray)}
@@ -79,11 +79,17 @@ button,input,textarea{font:inherit}
 .story-card{margin:0}
 .story-card-b{margin-top:12vw}
 .story-card-c{grid-column:1 / -1;width:58%;margin-left:auto;margin-top:2vw}
+.story-card-d{grid-column:1 / -1;width:42%;margin-top:-18vw}
+.story-card-e{width:82%;margin-top:3vw}
+.story-card-f{width:72%;margin-left:auto;margin-top:10vw}
 .story-image{margin:0;position:relative;overflow:hidden;background:var(--champagne);aspect-ratio:4/5}
 .story-image img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .7s;filter:saturate(.9) contrast(.97)}
 .story-card:hover .story-image img{transform:scale(1.025);filter:saturate(1) contrast(1)}
 .story-image figcaption{position:absolute;left:.9rem;right:.9rem;bottom:.9rem;margin:0;padding:.5rem .65rem;background:rgba(46,41,39,.74);color:#fff;font-size:.57rem;text-transform:uppercase;letter-spacing:.11em;line-height:1.35;backdrop-filter:blur(6px)}
 .story-card-c .story-image{aspect-ratio:16/9}
+.story-card-d .story-image{aspect-ratio:3/4}
+.story-card-e .story-image{aspect-ratio:3/4}
+.story-card-f .story-image{aspect-ratio:3/4}
 .story-meta{display:flex;justify-content:space-between;gap:1rem;border-top:1px solid rgba(129,119,115,.28);padding-top:.75rem;margin-top:.8rem}
 .story-meta p{margin:0;font:1.25rem var(--serif)}
 .story-meta span{font-size:.68rem;color:var(--gray);text-transform:uppercase;letter-spacing:.12em;text-align:right}
@@ -118,14 +124,47 @@ button,input,textarea{font:inherit}
   .site-nav.open{transform:none}.site-nav .nav-cta{font:1rem var(--sans);margin-top:1rem}
   .hero{grid-template-columns:1fr;padding-top:120px;gap:3.5rem}.hero h1{max-width:11ch}.hero-art{width:min(92%,600px);justify-self:center}.scroll-note{display:none}
   .manifesto,.about-grid,.work-heading,.journal-intro,.contact{grid-template-columns:1fr}.manifesto{gap:2.5rem}.manifesto p{margin-left:0}.about-grid{gap:3.5rem}.about-visual{width:min(86%,620px)}
-  .work-heading{align-items:start}.story-card-b{margin-top:10vw}.story-card-c{width:75%}.contact-mark{display:none}.contact{min-height:auto}
+  .work-heading{align-items:start}.story-card-b{margin-top:10vw}.story-card-c{width:75%}.story-card-d{width:48%;margin-top:-12vw}.story-card-e{width:78%}.story-card-f{width:78%;margin-top:8vw}.contact-mark{display:none}.contact{min-height:auto}
   .site-footer{grid-template-columns:1fr}.footer-nav{justify-content:flex-start}.copyright{text-align:left}
 }
 @media (max-width: 620px){
   :root{--pad:1.1rem}.hero{padding-top:110px}.hero h1{font-size:clamp(3rem,15vw,4.7rem)}.lede{font-size:.98rem}.hero-actions{align-items:flex-start;flex-direction:column}.hero-art{padding-right:18px}.side-note{right:-24px}.seal{width:88px;height:88px;left:-18px}.seal span{font-size:1.5rem}
   .manifesto{padding-top:6rem;padding-bottom:6rem}.manifesto h2{font-size:2.7rem}.about,.work,.journal{padding-top:6rem;padding-bottom:6rem}.about-copy h2,.work h2,.journal h2,.contact h2{font-size:clamp(2.7rem,13vw,4rem)}
-  .story-grid{grid-template-columns:1fr}.story-card-b{margin-top:1.5rem}.story-card-c{grid-column:auto;width:100%;margin:1.5rem 0 0}.story-card-c .story-image{aspect-ratio:4/5}.story-meta{align-items:flex-start}.journal-item{grid-template-columns:1fr;gap:.4rem}.journal-item p{text-align:left;margin:.4rem 0}.contact{padding-top:5.5rem;padding-bottom:5.5rem}
+  .story-grid{grid-template-columns:1fr}.story-card-b{margin-top:1.5rem}.story-card-c,.story-card-d,.story-card-e,.story-card-f{grid-column:auto;width:100%;margin:1.5rem 0 0}.story-card-c .story-image,.story-card-d .story-image,.story-card-e .story-image,.story-card-f .story-image{aspect-ratio:4/5}.story-meta{align-items:flex-start}.journal-item{grid-template-columns:1fr;gap:.4rem}.journal-item p{text-align:left;margin:.4rem 0}.contact{padding-top:5.5rem;padding-bottom:5.5rem}
 }
 @media (prefers-reduced-motion: reduce){
   html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}
 }
+
+/* Client visual reference: contact-reference.png
+   Dark editorial contact treatment with oversized serif heading and warm ivory CTA. */
+.contact {
+  background: #302a28;
+  color: #f5ebe0;
+}
+.contact .eyebrow {
+  color: #c8b7af;
+  letter-spacing: .18em;
+}
+.contact-panel h2 {
+  color: #f7ede3;
+  max-width: 7.5ch;
+}
+.contact-panel > p:not(.eyebrow) {
+  color: rgba(247, 237, 227, .82);
+}
+.contact-panel small {
+  color: rgba(247, 237, 227, .58);
+}
+.button-light {
+  background: #f5ebe0;
+  color: #302a28;
+}
+.button-light:hover,
+.button-light:focus-visible {
+  background: #e3d5ca;
+}
+
+/* Client typography direction reference: typography-reference.png.
+   The reference artwork names commercial display/script fonts. The demo keeps
+   the logo as artwork and uses licensed web typography for editable text. */
