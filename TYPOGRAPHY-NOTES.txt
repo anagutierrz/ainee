@@ -1,0 +1,13 @@
+Ainee Pimentel — Typography direction
+
+Supplied packages:
+1. Stolen Love — intended as primary editorial display serif.
+2. New Icon Font Duo — intended as secondary editorial / condensed serif.
+3. Sloop Script Three — intended as a restrained handwritten accent.
+
+License status from supplied ZIPs:
+- New Icon: included info.txt says "Free for Personal Use". Commercial/web license required for client production.
+- Stolen Love: no license file found in supplied archive. Confirm commercial/web rights.
+- Sloop: no license file found in supplied archive. Confirm commercial/web rights.
+
+The demo keeps working with web-safe fallbacks. styles.css already includes the supplied family names in its font stacks so the typography can be activated later by adding properly licensed @font-face declarations.

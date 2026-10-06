@@ -6,7 +6,9 @@
   --gray:#817773;
   --ink:#2e2927;
   --paper:#fffaf5;
-  --serif:"Italiana", Georgia, serif;
+  --serif:"Stolen Love", "Italiana", Georgia, serif;
+  --serif-condensed:"New Icon Serif Condensed", "Italiana", Georgia, serif;
+  --script:"Sloop Script Three", cursive;
   --sans:"DM Sans", Arial, sans-serif;
   --pad:clamp(1.25rem,4vw,5rem);
   --radius:2px;
@@ -168,3 +170,37 @@ button,input,textarea{font:inherit}
 /* Client typography direction reference: typography-reference.png.
    The reference artwork names commercial display/script fonts. The demo keeps
    the logo as artwork and uses licensed web typography for editable text. */
+
+
+/* Typography packages supplied by the client
+   ------------------------------------------------------------
+   Intended roles:
+   - Stolen Love: primary editorial display serif
+   - New Icon Serif / Condensed: secondary fashion-editorial serif
+   - Sloop Script Three: restrained handwritten accent
+
+   IMPORTANT: the demo does not redistribute or self-host the supplied font
+   binaries. New Icon's included info.txt states "Free for Personal Use",
+   so a commercial/web license should be confirmed before production use.
+   Stolen Love and Sloop were supplied without an included license file.
+
+   The font-family names are already placed in the stacks above. If the
+   corresponding licensed webfonts are later self-hosted, add @font-face
+   declarations here and the design will begin using them automatically. */
+
+/* Editorial typography tuning inspired by the supplied font references. */
+.hero h1,
+.manifesto-kicker,
+.manifesto h2,
+.about-copy h2,
+.work h2,
+.journal h2,
+.contact h2,
+.journal-item h3,
+.story-meta p {
+  text-wrap: balance;
+}
+.hero h1 em,
+.contact h2 {
+  font-style: normal;
+}
