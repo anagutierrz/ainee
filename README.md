@@ -35,3 +35,6 @@ El código ya incluye estos nombres dentro de los `font-family` de reserva y man
 - Por esa razón, los archivos binarios de las tipografías no se redistribuyen dentro de este paquete de entrega.
 
 Cuando las licencias web estén confirmadas, basta con añadir los webfonts autorizados y sus reglas `@font-face` en `styles.css`; las variables tipográficas ya están preparadas.
+
+## Mobile header fix
+The mobile navigation now stays fully hidden (including the “Plan your wedding” CTA) until the Menu button is opened, preventing the CTA from overlapping the logo or page content.

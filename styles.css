@@ -261,3 +261,60 @@ button,input,textarea{font:inherit}
   .wedding-marquee{overflow-x:auto;scrollbar-width:thin}
   .wedding-marquee-track{animation:none}
 }
+
+/* Mobile navigation hardening: keep the CTA fully inside the closed menu panel. */
+@media (max-width: 900px){
+  .site-nav{
+    visibility:hidden;
+    pointer-events:none;
+  }
+  .site-nav.open{
+    visibility:visible;
+    pointer-events:auto;
+  }
+  .site-nav .nav-cta{
+    position:static;
+    width:auto;
+    max-width:100%;
+  }
+}
+
+
+/* Home: Meet the Planner */
+.home-meet{padding-top:clamp(5rem,8vw,8rem);padding-bottom:clamp(5rem,8vw,8rem);background:var(--paper);display:grid;grid-template-columns:minmax(260px,.72fr) minmax(0,1fr);gap:clamp(2.5rem,7vw,8rem);align-items:center}
+.home-meet-visual{max-width:540px}
+.home-meet-visual .portrait-crop{aspect-ratio:4/5;overflow:hidden}
+.home-meet-visual img{width:100%;height:100%;object-fit:cover;object-position:center 22%}
+.home-meet-copy h2{font:400 clamp(3rem,5.5vw,5.8rem)/.98 var(--serif);letter-spacing:-.03em;margin:.65rem 0 1.5rem;color:var(--ink)}
+.home-meet-copy>p:not(.eyebrow){max-width:670px;color:#615955}
+
+/* Home inquiry form */
+.home-inquiry{padding-top:clamp(5rem,9vw,9rem);padding-bottom:clamp(5rem,9vw,9rem);background:var(--linen);display:grid;grid-template-columns:minmax(240px,.72fr) minmax(0,1.28fr);gap:clamp(2.5rem,7vw,8rem);align-items:start;border-top:1px solid rgba(111,103,98,.16)}
+.home-inquiry-intro h2{font:400 clamp(2.8rem,5vw,5.5rem)/1 var(--serif);letter-spacing:-.03em;margin:.65rem 0 1.4rem;max-width:10ch}
+.home-inquiry-intro>p:not(.eyebrow){max-width:520px;color:#615955}
+.form-demo-note{font-size:.76rem!important;color:var(--gray)!important;border-left:1px solid var(--cinereous);padding-left:1rem;margin-top:1.6rem}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.35rem 1rem}
+.inquiry-form label{display:flex;flex-direction:column;gap:.45rem;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)}
+.inquiry-form label b{font-weight:400;color:var(--ink)}
+.inquiry-form input,.inquiry-form select{width:100%;border:0;border-bottom:1px solid rgba(111,103,98,.4);border-radius:0;background:transparent;color:var(--ink);padding:.75rem .1rem .7rem;outline:none;font:400 1rem var(--sans)}
+.inquiry-form input:focus,.inquiry-form select:focus{border-bottom-color:var(--ink)}
+.inquiry-form select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--gray) 50%),linear-gradient(135deg,var(--gray) 50%,transparent 50%);background-position:calc(100% - 14px) 50%,calc(100% - 9px) 50%;background-size:5px 5px,5px 5px;background-repeat:no-repeat;padding-right:2rem}
+.form-actions{display:flex;align-items:center;gap:1.35rem;flex-wrap:wrap;margin-top:2rem}
+.form-status{min-height:1.5em;margin:.9rem 0 0;font-size:.82rem;color:var(--gray)}
+
+@media (max-width:900px){
+  .home-meet,.home-inquiry{grid-template-columns:1fr}
+  .home-meet-visual{width:min(78%,520px)}
+}
+@media (max-width:620px){
+  .home-meet{padding-top:4rem;padding-bottom:4.5rem;gap:2.2rem}
+  .home-meet-visual{width:82%}
+  .home-meet-copy h2{font-size:3.15rem}
+  .home-inquiry{padding-top:4.5rem;padding-bottom:4.5rem;gap:2.5rem}
+  .home-inquiry-intro h2{font-size:3rem}
+  .form-grid{grid-template-columns:1fr}
+  .form-actions{align-items:stretch;flex-direction:column}
+  .form-actions .button{width:100%}
+  .home-weddings{display:block!important;visibility:visible!important}
+  .wedding-marquee{display:block!important}
+}

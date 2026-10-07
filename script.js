@@ -34,3 +34,16 @@ if (!reduced && 'IntersectionObserver' in window) {
 } else {
   document.querySelectorAll('.reveal').forEach(el => el.classList.add('is-visible'));
 }
+
+
+const demoInquiry = document.querySelector('[data-demo-inquiry]');
+demoInquiry?.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const status = demoInquiry.querySelector('[data-form-status]');
+  if (!demoInquiry.checkValidity()) {
+    demoInquiry.reportValidity();
+    if (status) status.textContent = 'Please complete the required fields.';
+    return;
+  }
+  if (status) status.textContent = 'Thanks — this is the demo form. Final submission to Aisle Planner will be connected after approval.';
+});
