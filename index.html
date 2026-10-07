@@ -18,14 +18,14 @@
     <a class="brand" href="index.html" aria-label="Ainee Pimentel — Home">
       <img src="logo-ainee.png" alt="Ainee Pimentel — Wedding & Event Planner" />
     </a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation menu" data-menu-toggle>
       <span>Menu</span><i></i><i></i>
     </button>
     <nav id="site-nav" class="site-nav" aria-label="Primary" data-nav>
       <a href="meet-ainee.html">Meet Ainee</a>
       <a href="weddings.html">Weddings</a>
       <a href="journal.html">Journal</a>
-      <a href="contact.html" class="nav-cta">Plan your wedding</a>
+      <a href="inquiry.html" class="nav-cta">Get in touch</a>
     </nav>
   </header>
   <main id="main">
@@ -35,7 +35,7 @@
         <h1>Thoughtfully planned weddings, shaped around <em>your story.</em></h1>
         <p class="lede">A warm, considered planning experience for couples celebrating in the Dominican Republic — with care for the people, the atmosphere, and every meaningful detail.</p>
         <div class="hero-actions">
-          <a class="button button-dark" href="#get-in-touch">Get in touch</a>
+          <a class="button button-dark" href="inquiry.html">Get in touch</a>
           <a class="text-link" href="meet-ainee.html">Meet your planner <span aria-hidden="true">↘</span></a>
         </div>
       </div>
@@ -57,7 +57,7 @@
         <p>Today, Ainee combines her organizational expertise with a refined eye for design to create celebrations that feel effortless, personal, and beautifully curated.</p>
         <div class="hero-actions">
           <a class="text-link" href="meet-ainee.html">Meet Ainee <span aria-hidden="true">→</span></a>
-          <a class="text-link" href="#get-in-touch">Start your inquiry <span aria-hidden="true">→</span></a>
+          <a class="text-link" href="inquiry.html">Start your inquiry <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </section>
@@ -100,31 +100,6 @@
       </div>
     </section>
 
-    <section class="home-inquiry section-shell" id="get-in-touch" aria-labelledby="home-inquiry-title">
-      <div class="home-inquiry-intro reveal">
-        <p class="eyebrow">Begin the conversation</p>
-        <h2 id="home-inquiry-title">Tell us a little about your celebration.</h2>
-        <p>Share the first details below and Ainee can continue the conversation with you personally.</p>
-        <p class="form-demo-note">Demo form: submission is not yet connected to Aisle Planner. The final integration will be activated after approval.</p>
-      </div>
-      <form class="inquiry-form reveal" data-demo-inquiry novalidate>
-        <div class="form-grid">
-          <label><span>Full Name</span><input type="text" name="full_name" autocomplete="name"></label>
-          <label><span>Partner’s Full Name <b aria-hidden="true">*</b></span><input type="text" name="partner_name" required></label>
-          <label><span>Email Address <b aria-hidden="true">*</b></span><input type="email" name="email" autocomplete="email" required></label>
-          <label><span>Phone Number <b aria-hidden="true">*</b></span><input type="tel" name="phone" autocomplete="tel" required></label>
-          <label><span>Wedding Date <b aria-hidden="true">*</b></span><input type="date" name="wedding_date" required></label>
-          <label><span>Location of Interest (if already selected) <b aria-hidden="true">*</b></span><input type="text" name="location" required></label>
-          <label><span>Estimated Guest Count <b aria-hidden="true">*</b></span><input type="number" name="guest_count" min="1" inputmode="numeric" required></label>
-          <label><span>How did you find us?</span><select name="source"><option value="">Select one</option><option>Instagram</option><option>Google</option><option>Referral</option><option>Venue / Vendor</option><option>Other</option></select></label>
-        </div>
-        <div class="form-actions">
-          <button class="button button-dark" type="submit">Get in touch</button>
-          <a class="text-link" href="https://www.instagram.com/aineeplanner?stkn=bjY0MzduYWdjZDFm&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram @aineeplanner <span aria-hidden="true">↗</span></a>
-        </div>
-        <p class="form-status" role="status" aria-live="polite" data-form-status></p>
-      </form>
-    </section>
 
   </main>
   <footer class="site-footer section-shell">

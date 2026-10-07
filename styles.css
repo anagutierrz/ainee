@@ -318,3 +318,23 @@ button,input,textarea{font:inherit}
   .home-weddings{display:block!important;visibility:visible!important}
   .wedding-marquee{display:block!important}
 }
+
+
+/* Dedicated inquiry page */
+.inquiry-page{padding-top:clamp(9rem,14vw,12rem);padding-bottom:clamp(5rem,9vw,9rem);display:grid;grid-template-columns:minmax(240px,.72fr) minmax(0,1.28fr);gap:clamp(2.5rem,7vw,8rem);align-items:start;background:var(--linen)}
+.inquiry-page-intro .page-title{font:400 clamp(3rem,6vw,6.2rem)/.98 var(--serif);letter-spacing:-.03em;margin:.7rem 0 1.4rem;max-width:9ch}
+.inquiry-page-intro>p:not(.eyebrow){max-width:520px;color:#615955}
+@media (max-width:900px){.inquiry-page{grid-template-columns:1fr;padding-top:7rem}}
+@media (max-width:620px){.inquiry-page{padding-top:6.5rem;padding-bottom:4rem}.form-grid{grid-template-columns:1fr}}
+
+/* Reliable mobile menu interaction */
+@media (max-width:900px){
+  .site-header{z-index:300}
+  .menu-toggle{z-index:302;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+  .site-nav{z-index:301;transform:translateY(-100%);opacity:0;visibility:hidden;pointer-events:none;transition:transform .38s cubic-bezier(.6,0,.2,1),opacity .25s ease,visibility 0s linear .38s}
+  .site-nav.open{transform:translateY(0);opacity:1;visibility:visible;pointer-events:auto;transition:transform .38s cubic-bezier(.6,0,.2,1),opacity .25s ease,visibility 0s}
+  body.menu-open{overflow:hidden}
+  .menu-toggle[aria-expanded="true"] i:first-of-type{transform:translateY(2.5px) rotate(45deg)}
+  .menu-toggle[aria-expanded="true"] i:last-of-type{transform:translateY(-2.5px) rotate(-45deg)}
+  .menu-toggle i{transition:transform .25s ease}
+}
