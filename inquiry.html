@@ -1,19 +1,10 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="robots" content="noindex,nofollow,noarchive" />
-  <meta name="theme-color" content="#f5ebe0" />
-  <meta name="description" content="Wedding inquiry form for Ainee Pimentel, Wedding & Event Planner in the Dominican Republic." />
-  <title>Get in touch | Ainee Pimentel</title>
+<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="robots" content="noindex,nofollow,noarchive" /><meta name="theme-color" content="#f5ebe0" /><meta name="description" content="Inquiry form for Ainee Pimentel, Wedding & Event Planner in the Dominican Republic." /><title>Inquire | Ainee Pimentel</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Italiana&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css" />
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <link rel="stylesheet" href="./styles.css" /></head>
+<body><a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header" data-header>
     <a class="brand" href="index.html" aria-label="Ainee Pimentel — Home">
       <img src="logo-ainee.png" alt="Ainee Pimentel — Wedding & Event Planner" />
@@ -24,46 +15,52 @@
     <nav id="site-nav" class="site-nav" aria-label="Primary" data-nav>
       <a href="meet-ainee.html">Meet Ainee</a>
       <a href="weddings.html">Weddings</a>
+      <a href="events.html">Events</a>
       <a href="journal.html">Journal</a>
-      <a href="inquiry.html" class="nav-cta" aria-current="page">Get in touch</a>
+      <a href="inquiry.html" class="nav-cta" aria-current="page">Inquire</a>
     </nav>
   </header>
-  <main id="main" class="page-main inquiry-page-main">
-    <section class="inquiry-page section-shell" aria-labelledby="inquiry-title">
-      <div class="inquiry-page-intro reveal">
-        <p class="eyebrow">Begin the conversation</p>
-        <h1 id="inquiry-title" class="page-title">Tell us about your celebration.</h1>
-        <p>Share the first details of your wedding and Ainee can continue the conversation with you personally.</p>
-        <p class="form-demo-note">Demo form: submission is not yet connected to Aisle Planner. Final delivery will connect the approved inquiry flow.</p>
+<main id="main" class="page-main inquiry-page-main">
+  <section class="inquiry-page section-shell" aria-labelledby="inquiry-title">
+    <div class="inquiry-page-intro reveal"><p class="eyebrow">Inquire</p><h1 id="inquiry-title" class="page-title">Tell us about your celebration.</h1><p>Share the details you already know. Ainee can continue the conversation with you personally.</p><p class="form-demo-note"><strong>Demo submission status:</strong> the live delivery service has not yet been configured, so this form does not transmit data yet. The fields below are the ones confirmed for Ainee; no unverified fields from the Claire Duran embedded form were added.</p></div>
+    <form class="inquiry-form reveal" data-demo-inquiry novalidate>
+      <div class="form-grid">
+        <label><span>Full Name <b aria-hidden="true">*</b></span><input type="text" name="full_name" autocomplete="name" required></label>
+        <label><span>Partner’s Full Name <small>Optional</small></span><input type="text" name="partner_name" autocomplete="name"></label>
+        <label><span>Email Address <b aria-hidden="true">*</b></span><input type="email" name="email" autocomplete="email" required></label>
+        <label><span>Phone Number <b aria-hidden="true">*</b></span><input type="tel" name="phone" autocomplete="tel" required></label>
+        <label><span>Wedding / Event Date</span><input type="date" name="event_date"></label>
+        <label><span>Location of Interest (if already selected)</span><input type="text" name="location"></label>
+        <label><span>Estimated Guest Count</span><input type="number" name="guest_count" min="1" inputmode="numeric"></label>
+        <label><span>Budget</span><input type="text" name="budget" inputmode="decimal" placeholder="Write your estimated budget"></label>
+        <label class="form-wide"><span>How did you find us?</span><input type="text" name="source"></label>
       </div>
-      <form class="inquiry-form reveal" data-demo-inquiry novalidate>
-        <div class="form-grid">
-          <label><span>Full Name</span><input type="text" name="full_name" autocomplete="name"></label>
-          <label><span>Partner’s Full Name <b aria-hidden="true">*</b></span><input type="text" name="partner_name" required></label>
-          <label><span>Email Address <b aria-hidden="true">*</b></span><input type="email" name="email" autocomplete="email" required></label>
-          <label><span>Phone Number <b aria-hidden="true">*</b></span><input type="tel" name="phone" autocomplete="tel" required></label>
-          <label><span>Wedding Date <b aria-hidden="true">*</b></span><input type="date" name="wedding_date" required></label>
-          <label><span>Location of Interest (if already selected) <b aria-hidden="true">*</b></span><input type="text" name="location" required></label>
-          <label><span>Estimated Guest Count <b aria-hidden="true">*</b></span><input type="number" name="guest_count" min="1" inputmode="numeric" required></label>
-          <label><span>How did you find us?</span><select name="source"><option value="">Select one</option><option>Instagram</option><option>Google</option><option>Referral</option><option>Venue / Vendor</option><option>Other</option></select></label>
-        </div>
-        <div class="form-actions">
-          <button class="button button-dark" type="submit">Submit inquiry</button>
-          <a class="text-link" href="https://www.instagram.com/aineeplanner?stkn=bjY0MzduYWdjZDFm&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram @aineeplanner <span aria-hidden="true">↗</span></a>
-        </div>
-        <p class="form-status" role="status" aria-live="polite" data-form-status></p>
-      </form>
-    </section>
-  </main>
+      <div class="form-actions"><button class="button button-dark" type="submit">Submit inquiry</button><a class="text-link" href="https://www.instagram.com/aineeplanner?stkn=bjY0MzduYWdjZDFm&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram @aineeplanner <span aria-hidden="true">↗</span></a></div>
+      <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+    </form>
+  </section>
+</main>
   <footer class="site-footer section-shell">
+    <div class="footer-connect">
+      <p class="footer-script">Want to connect further?</p>
+      <div class="social-icons" aria-label="Contact links">
+        <a href="https://www.instagram.com/aineeplanner?stkn=bjY0MzduYWdjZDFm&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram @aineeplanner" title="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg>
+        </a>
+        <a href="https://wa.me/18098798605" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp +1 809 879 8605" title="WhatsApp">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.7a8 8 0 0 1-11.8 7l-4.2 1.1 1.1-4.1A8 8 0 1 1 20 11.7Z"></path><path d="M9 8.3c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.7 1.7c.1.3.1.5-.1.7l-.6.8c-.2.2-.1.4 0 .6.5.9 1.4 1.8 2.3 2.3.2.1.4.2.6 0l.8-1c.2-.2.4-.3.7-.2l1.7.8c.3.1.4.3.4.5 0 .3-.1 1.3-.8 1.8-.6.5-1.5.8-2.5.5-1.2-.3-2.7-1-4.1-2.3-1.2-1.2-2-2.5-2.4-3.7-.4-1.1.1-2 .6-2.5Z"></path></svg>
+        </a>
+        <a href="mailto:info@aineeplanner.com" aria-label="Email info@aineeplanner.com" title="Email">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"></rect><path d="m4 7 8 6 8-6"></path></svg>
+        </a>
+      </div>
+    </div>
     <div class="footer-brand"><img src="logo-ainee.png" alt="Ainee Pimentel" /></div>
     <div class="footer-nav">
-      <a href="meet-ainee.html">Meet Ainee</a><a href="weddings.html">Weddings</a><a href="journal.html">Journal</a><a href="contact.html">Contact</a><a href="https://www.instagram.com/aineeplanner?stkn=bjY0MzduYWdjZDFm&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="meet-ainee.html">Meet Ainee</a><a href="weddings.html">Weddings</a><a href="events.html">Events</a><a href="journal.html">Journal</a><a href="inquiry.html">Inquire</a>
     </div>
     <p class="footer-note">Wedding & Event Planner · Dominican Republic</p>
-    <p class="copyright">© <span data-year></span> Ainee Pimentel</p>
+    <p class="copyright">© <span data-year></span> Ainee Pimentel. All rights reserved.</p>
   </footer>
   <a class="whatsapp-float" href="https://wa.me/18098798605" target="_blank" rel="noopener noreferrer" aria-label="Contact Ainee Pimentel on WhatsApp">WhatsApp</a>
-  <script src="./script.js"></script>
-</body>
-</html>
+<script src="./script.js"></script></body></html>

@@ -66,6 +66,22 @@ document.addEventListener('DOMContentLoaded', () => {
       if (status) status.textContent = 'Please complete the required fields.';
       return;
     }
-    if (status) status.textContent = 'Thanks — this is the demo form. Final submission to Aisle Planner will be connected after approval.';
+    if (status) status.textContent = 'This demo form is not connected yet, so your information has not been sent. Please use WhatsApp or email until the final delivery service is configured.';
+  });
+});
+
+
+// Project carousels: arrows, keyboard and native touch/drag scrolling.
+document.querySelectorAll('[data-carousel]').forEach((carousel) => {
+  const track = carousel.querySelector('[data-carousel-track]');
+  const prev = carousel.querySelector('[data-carousel-prev]');
+  const next = carousel.querySelector('[data-carousel-next]');
+  if (!track) return;
+  const move = (direction) => track.scrollBy({ left: direction * track.clientWidth, behavior: 'smooth' });
+  prev?.addEventListener('click', () => move(-1));
+  next?.addEventListener('click', () => move(1));
+  carousel.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowLeft') { event.preventDefault(); move(-1); }
+    if (event.key === 'ArrowRight') { event.preventDefault(); move(1); }
   });
 });

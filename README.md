@@ -38,3 +38,13 @@ Cuando las licencias web estén confirmadas, basta con añadir los webfonts auto
 
 ## Mobile header fix
 The mobile navigation now stays fully hidden (including the “Plan your wedding” CTA) until the Menu button is opened, preventing the CTA from overlapping the logo or page content.
+
+
+## October 2026 portfolio update
+- Weddings is the primary service; Events is a secondary service.
+- Added an Events page without inventing event project details.
+- Wedding portfolio is organized into carousel project blocks. Couple names, locations and final photo grouping remain pending confirmation.
+- Added static Instagram preview linked to @aineeplanner. Live recent posts and individual post links require an authorized Instagram integration/API.
+- Inquiry form adds free-text Budget and makes Partner’s Full Name optional.
+- The Claire Duran public contact page was reviewed, but its actual form fields are embedded via HoneyBook and were not available to inspect through the public page source. No unverified fields were copied.
+- Inquiry delivery remains unconnected in this demo. A real submission service/endpoint or Aisle Planner integration credentials/instructions are still required before delivery can be verified.
