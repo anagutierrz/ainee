@@ -48,3 +48,13 @@ The mobile navigation now stays fully hidden (including the “Plan your wedding
 - Inquiry form adds free-text Budget and makes Partner’s Full Name optional.
 - The Claire Duran public contact page was reviewed, but its actual form fields are embedded via HoneyBook and were not available to inspect through the public page source. No unverified fields were copied.
 - Inquiry delivery remains unconnected in this demo. A real submission service/endpoint or Aisle Planner integration credentials/instructions are still required before delivery can be verified.
+
+## Mobile menu scroll visibility fix
+The mobile hamburger control is now fixed independently to the viewport, including iPhone safe-area support. It remains visible while scrolling and while the full-screen navigation is open.
+
+## Instagram update
+The Home page now embeds these three real @aineeplanner posts supplied by the client:
+- https://www.instagram.com/p/Dc_uLw1lBR4/
+- https://www.instagram.com/p/Db4JOHOlKYL/
+- https://www.instagram.com/p/DXMlw2Jjbvr/
+Instagram serves the post content directly in the browser. If Instagram blocks third-party embeds, the direct "View post" links remain available.
